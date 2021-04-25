@@ -1,33 +1,68 @@
 ## Overview
 
-Web app for Udacity's Dog Breed Classifier Project for Data Science Nano Degree Program.
+For my Data Science Nano Degree capstone project, I chose Dog Breed Classifier.
 
-### Used libraries
+This project uses CNN + Transfer learning to identify dog breeds from the submitted images. 
+
+1. Convolutional Neural Networks (CNNs) are commonly used to analyse image data.
+2. Transfer learning is a technique that allows to reuse a model across different tasks.
+
+The objective is to identify the breed of a dog, and as a ester egg, if you provide a human image, it will tell you which dog breed does it resemble the most :laughing: 
+
+
+
+### Motivation
+
+I chose this project, because I like Computer Vision as a field and wanted to get my hands dirty with it. 
+
+Another motivation was dogs, I love them 😍.
+
+
+
+### Table of contents
+
+1. [Used Libraries](#libraries)
+2. [File Description](#file-description)
+3. [Findings](#findings)
+4. [Web App Description](#web-app-description)
+
+### Major Used libraries <a name='libraries'>
 
 ```bash
-click==6.7
-Flask==1.0.2
-h5py==2.8.0
-itsdangerous==0.24
-Jinja2==2.10
-Keras==2.0.2
-numpy==1.14.4
-olefile==0.45.1
-opencv-python==3.2.0.6
-Pillow==4.0.0
-protobuf==3.5.2.post1
-PyYAML==3.12
-scipy==1.1.0
-six==1.11.0
-tensorflow==1.0.0
-Theano==1.0.2
-Werkzeug==0.14.1
-MarkupSafe==1.1.1
+Keras
+opencv-python
+tensorflow
 ```
 
+### File Description <a name='file-description'>
+
+`dog_app.ipynb` Complete process of experimentation and model development notebook.
+
+`dog_app.html` Same notebook in html format for better and quick look around.
+
+`dog-project.py` Webapp that serves the model to make predictions.
+
+`requirements.txt` List of all libraries required for the project to work correctly.
 
 
-ResNet50 fine-tuned on 133 different dog breeds. 
+
+### Findings & Potential Improvements<a name='findings'>
+
+- The model achieved a test accuracy of 81.5%.
+- Developing and training a model from scratch was a good learning experience. 
+- Models gets confused between some visually simlar breeds, this can be improved upon.
+- Human face detection can be improved upon, as currectly it mostly only identifies faces that are very clear and from front angle.
+- The model could be improved on its ability to classify pictures with noise. 
+
+
+
+### Web App Description <a name='web-app-description'>
+
+Web app for Udacity's Dog Breed Classifier Project for Data Science Nano Degree Program. 
+
+Model can classify 133 different dog breeds.
+
+##### Working:
 
 * If a dog image is selected: 
     * It detects it's breed. 
@@ -42,7 +77,7 @@ The app displays:
 
 ![Result-Image](doc/img/result-dog.png)
 
-## How to run
+##### How to run
 
 1. Clone the repository.
 ```	bash
