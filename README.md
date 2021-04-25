@@ -4,7 +4,7 @@ Web app for Udacity's Dog Breed Classifier Project for Data Science Nano Degree 
 
 ### Used libraries
 
-```python
+```bash
 click==6.7
 Flask==1.0.2
 h5py==2.8.0
@@ -38,9 +38,9 @@ The app displays:
 * The most likely dog breed with associated probability.
 * An image of the dog breed with alongside the selected image
 
-![Index-Image](/Users/naumannaeem/Personal/data-science-nd/capstone/dog-project-app-master/doc/img/index.png)
+![Index-Image](doc/img/index.png)
 
-![Result-Image](/Users/naumannaeem/Personal/data-science-nd/capstone/dog-project-app-master/doc/img/result-dog.png)
+![Result-Image](doc/img/result-dog.png)
 
 ## How to run
 
